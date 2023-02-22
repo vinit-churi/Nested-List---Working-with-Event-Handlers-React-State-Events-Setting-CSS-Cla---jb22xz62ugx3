@@ -16,7 +16,7 @@ function App() {
                                 key={uniqueID()}
                                 name={state.name}
                                 cities={state.cities}
-                                id={`state-${index + 1}`}
+                                id={`state${index + 1}`}
                             />
                         );
                     })}
