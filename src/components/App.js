@@ -8,18 +8,20 @@ import { uniqueID } from "../utils";
 function App() {
     return (
         <>
-            <ul>
-                {states.map((state, index) => {
-                    return (
-                        <State
-                            key={uniqueID()}
-                            name={state.name}
-                            cities={state.cities}
-                            id={`state-${index + 1}`}
-                        />
-                    );
-                })}
-            </ul>
+            <div id="main">
+                <ul>
+                    {states.map((state, index) => {
+                        return (
+                            <State
+                                key={uniqueID()}
+                                name={state.name}
+                                cities={state.cities}
+                                id={`state-${index + 1}`}
+                            />
+                        );
+                    })}
+                </ul>
+            </div>
         </>
     );
 }
