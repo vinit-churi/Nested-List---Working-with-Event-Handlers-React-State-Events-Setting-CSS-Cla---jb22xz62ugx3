@@ -19,7 +19,7 @@ const State = (props) => {
                                 key={uniqueID()}
                                 name={city.name}
                                 towns={city.towns}
-                                id={`city${index + 1}`}
+                                id={`city-${index + 1}`}
                             />
                         );
                     })}

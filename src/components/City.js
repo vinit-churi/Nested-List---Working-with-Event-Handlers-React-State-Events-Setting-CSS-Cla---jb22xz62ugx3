@@ -18,7 +18,7 @@ const City = (props) => {
                             <Town
                                 key={uniqueID()}
                                 name={town.name}
-                                id={`town${index + 1}`}
+                                id={`town-${index + 1}`}
                             />
                         );
                     })}
