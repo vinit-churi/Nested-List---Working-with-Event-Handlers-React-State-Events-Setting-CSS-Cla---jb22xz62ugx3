@@ -4,7 +4,7 @@ import { uniqueID } from "../utils";
 
 const City = (props) => {
     let { name, towns, id } = props;
-    const [showTown, setShowTown] = useState(true);
+    const [showTown, setShowTown] = useState(false);
     const handleClick = () => {
         setShowTown((showTown) => !showTown);
     };
